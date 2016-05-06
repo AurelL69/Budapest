@@ -8,3 +8,7 @@ img .partener{
 .logo-partner:hover{
 	opacity: 1;
 }
+.nav-tabs>li.active>a .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:visited{
+	background-color: #0b3468;
+	color: white;
+}

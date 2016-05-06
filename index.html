@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Budapest festival">
+    <meta name="description" content="Département Français / Résonances Festival">
     <meta name="author" content="Aurélien landelle">
 
-    <title>Rezonenciák Fesztivál</title>
+    <title>Département Français / Résonances Festival</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -50,7 +50,8 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Résonances<br><br>Département de français</a>
+
+                <a class="navbar-brand page-scroll" href="#page-top">Résonances / Département de français</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -60,16 +61,30 @@
                         <a href="#page-top">Actualités</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">Présentation</a>
+                        <a class="page-scroll" href="#university">Présentation</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                        <a class="page-scroll" href="#formation">Formations</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">About</a>
+                        <a class="page-scroll" href="#portfolio">Pazmographie</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#team">Invités</a>
+                        <a class="page-scroll" href="#Pazmédias">Pazmédias</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">Actualités</a>
+                    </li>
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle page-scroll" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Festival Résonances <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                        <li><a href="#Historique">Présentation</a></li>
+                        <li><a href="#">Programme</a></li>
+                        <li><a class="page-scroll" href="#team">Invités</a></li>
+                        <li><a href="#">Photos</a></li>
+                        <li><a href="#">Vidéos</a></li>
+                    </ul>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
@@ -85,23 +100,60 @@
     <header>
         <div class="container">
             <div class="intro-text">
-                <div class="intro-lead-in">Bienvenue sur le site du Rezonenciák Fesztivál!</div>
-                <div class="intro-heading">It's Nice To Meet You</div>
-                <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>
+               
+                <div id="my_carousel" class="carousel slide" data-ride="carousel">
+<!-- Bulles -->
+<ol class="carousel-indicators">
+<li data-target="#my_carousel" data-slide-to="0" class="active"></li>
+<li data-target="#my_carousel" data-slide-to="1"></li>
+<li data-target="#my_carousel" data-slide-to="2"></li>
+</ol>
+<!-- Slides -->
+<div class="carousel-inner">
+<!-- Page 1 -->
+<div class="item active">  
+<div class="carousel-page">
+<img src="/img/university/university1.png" class="img-responsive" style="margin:0px auto;" />
+</div> 
+<div class="carousel-caption">Bienvenue sur le Département Français <br>de l'Université Catholique Pázmány Péter</div>
+</div>   
+<!-- Page 2 -->
+<div class="item"> 
+<div class="carousel-page"><img src="/img/university/university2.png" class="img-responsive img-rounded" 
+style="margin:0px auto;"  /></div> 
+<div class="carousel-caption">Page 2 de présentation</div>
+</div>  
+<!-- Page 3 -->
+<div class="item">  
+<div class="carousel-page">
+<img src="/images/tablette.png" class="img-responsive img-rounded" 
+style="margin:0px auto;max-height:100%;"  />
+</div>  
+<div class="carousel-caption">Page 2 de présentation</div>
+</div>     
+</div>
+<!-- Contrôles -->
+<a class="left carousel-control" href="#my_carousel" data-slide="prev">
+<span class="glyphicon glyphicon-chevron-left"></span>
+</a>
+<a class="right carousel-control" href="#my_carousel" data-slide="next">
+<span class="glyphicon glyphicon-chevron-right"></span>
+</a>
+</div>
             </div>
         </div>
     </header>
 
     <!-- Services Section -->
-    <section id="services">
+    <section id="university">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Services</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading">Université Catholique Pázmány Péter</h2>
+                    <h3 class="section-subheading text-muted"></h3>
                 </div>
             </div>
-            <div class="row text-center">
+            <!-- <div class="row text-center">
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
@@ -126,8 +178,121 @@
                     <h4 class="service-heading">Web Security</h4>
                     <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                 </div>
-            </div>
+            </div> -->
+            <div id="content">
+    <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
+        <li class="active"><a href="#Description" data-toggle="tab">Description</a></li>
+        <li><a href="#Historique" data-toggle="tab">Historique</a></li>
+        <li><a href="#lieuFormation" data-toggle="tab">Lieux de formation</a></li>
+        <li><a href="#depFrancais" data-toggle="tab">Département Français</a></li>
+    </ul>
+    <div id="my-tab-content" class="tab-content">
+        <div class="tab-pane active" id="Description">
+            <h1>L’histoire de l’ Université</h1>
+            <p class="texte-tabs"> 
+                <img src="img/university/university1.png" class="img-thumbnail" alt="Cinque Terre" width="400" height="300" align="right">
+                L'Université catholique Péter Pázmány est l'une des universités de Budapest, fondée en 1635 par Péter Pázmány. Elle est l'héritière de la Faculté de théologie de l'Univerzitas de Nagyszombat - désormais l'Université Loránd Eötvös de Budapest - et de l'Académie catholique romaine de théologie. Elle devient université catholique en 1992.<br><br>
+                La première université de Buda est fondée en 1395 par Sigismond, roi de Hongrie mais disparait après vingt ans de fonctionnement. Dans les années 1480, le roi Matthia tente de réitérer l'expérience dans le quartier du château royal mais le projet échoue.<br><br>
+                En 1541, Pest et Buda deviennent deux villes ottomanes. L'administration hongroise est alors éclatée entre le nord du royaume épargné par les Turcs, ainsi que la Transylvanie. En 1635, Péter Pázmány, l'archevêque d'Esztergom et théologien fonde l'université à Nagyszombat et en confie la direction aux jésuites. À cette époque, l'université compte uniquement deux facultés : la faculté d'arts et une faculté de théologie. <br><br>
+                La faculté de droit est créée en 1667 et la faculté de médecine ouvre en 1769. Après la dissolution de l'ordre des jésuites, l'université est déplacée à Buda en 1777 en accord avec l'intention des fondateurs. Ce n'est qu'en 1784 que l'université trouve son emplacement final à Pest.
+</p>
         </div>
+        <div class="tab-pane" id="Historique">
+            <h1>Historique</h1>
+            <p>...</p>
+        </div>
+        <div class="tab-pane" id="lieuFormation">
+            <h1>Lieux</h1>
+            <p>...</p>
+        </div>
+        <div class="tab-pane" id="depFrancais">
+            <h1></h1>
+            <p class="texte-tabs">
+                Au Département de Français, les étudiants peuvent suivre quatre formations: licence en études romanes filière de français (3 ans), master en langue et culture françaises (2 ans), master FLE (dernière promotion en 2016) et formation de professeur de langue et de culture françaises (6 ans) avec une deuxième discipline (langue et littérature hongroises, histoire, langue et littérature anglaises ou allemandes). <br><br>
+                Nos formations de langue et de culture françaises visent à former des spécialistes qui, de par leurs connaissances et compétences acquises, sont capables, au niveau C1, de comprendre, d’interpréter, de transmettre et de rédiger en français, à l’écrit et à l’oral, des textes quotidiens, culturels, politiques, économiques, sociaux, linguistiques et littéraires. <br><br>
+                Nos diplômés acquièrent des connaissances théoriques et pratiques dans les domaines de la langue et de la culture françaises et francophones, en sciences sociales et humaines. Ces connaissances leur assurent des compétences professionnelles interculturelles et multidisciplinaires pour qu’ils puissent résoudre d’une manière créative et avec souplesse des problèmes humains et culturels, ainsi que mener à bien des tâches et des projets complexes. A notre département, les formations se déroulent intégralement en français (licence, master lettres, master FLE, formation de professeur de français). <br><br>
+                A l’issu de notre licence, grâce aux formations « mineures » et à nos modules professionnalisants, les étudiants obtiennent des connaissances et des compétences professionnelles qu’ils peuvent mettre en pratique immédiatement sur le marché du travail (connaissances de français sur objectifs spécifiques, stratégies de communication, médiation culturelle, traduction, recherche, enseignement, etc.). <br><br>
+                Notre département propose deux parcours de spécialisation au sein de la licence : FLE Professionnel (économie-gestion, administration, management et marketing) et Médiation culturelle (journalisme, arts, culture et médias).  
+            </p>
+        </div>
+    </div>
+</div>
+        </div>
+
+
+    </section>
+
+    <!-- Services Section -->
+    <section id="formation">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Formations</h2>
+                    <h3 class="section-subheading text-muted"></h3>
+                </div>
+            </div>
+            <!-- <div class="row text-center">
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">E-Commerce</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Responsive Design</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Web Security</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                </div>
+            </div> -->
+            <div id="content">
+    <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
+        <li class="active"><a href="#ba" data-toggle="tab">BA</a></li>
+        <li><a href="#licences" data-toggle="tab">Licences</a></li>
+        <li><a href="#modules" data-toggle="tab">Modules profesionnalisants</a></li>
+        <li><a href="#masters" data-toggle="tab">Masters</a></li>
+    </ul>
+    <div id="my-tab-content" class="tab-content">
+        <div class="tab-pane active" id="ba">
+            <h1>BA</h1>
+            <p class="texte-tabs"></p>
+        </div>
+        <div class="tab-pane" id="licences">
+            <h1>Licences</h1>
+            <p>orange orange orange orange orange</p>
+        </div>
+        <div class="tab-pane" id="modules">
+            <h1>Modules professionalisants</h1>
+            <p class="texte-tabs">
+                Le Département de Français de l’Université catholique Pázmány Péter propose pour tous ses étudiants un curriculum, intégralement en langue française, mieux adapté aux exigences du marché du travail. Dans le contexte économique actuel, il est indispensable de favoriser l’insertion professionnelle de nos étudiants en leur proposant un projet d’études basé sur le principe de la formation en alternance : en plus des cours qu’ils suivront au département, les étudiants effectueront un stage en entreprise qui leur offrira la possibilité d’acquérir une solide expérience professionnelle dans un domaine de leur choix ainsi que des opportunités d’embauche au terme de leur formation. <br><br>
+                Ces stages s’effectueront dans les organisations, sociétés et entreprises partenaires du département et seront sanctionnés par une note finale établie en fonction d’un barème déterminé en accord avec les différents employeurs. Les étudiants devront effectuer ce stage d’une durée de 6 mois pen-   
+                dant leur cursus de Licence. <br><br>
+                À la fin de leur stage les étudiants devront remettre un rapport synthétisant les différents moments de leur projet professionnalisant : études de terrain, synthèse de documents, mise en place d’actions de développement, évaluation, organisation d’événements, création d’outils, etc. Pendant leur stage, nos étudiants pourront non seulement mettre en pratique leurs connaissances théoriques acquises pendant leurs premières années d’études au département, mais aussi apprendre les rudiments d’un métier spécifique en intégrant une organisation ou entreprise et en participant concrètement aux activités de celle-ci. En fonction de leurs capacités, de leurs progrès ainsi que de leur investissement personnel, mais aussi des postes disponibles, les étudiants se verront proposer une opportunité de poursuivre leur carrière chez un de nos partenaires en fin de stage. <br><br>
+                Le projet de chaque étudiant du département se déroulera sur 3 ans. Deux parcours (ou modules) professionnels seront proposés dès la rentrée de septembre 2016 : <br><br>
+                <b>FLE Professionnel (économie-gestion, administration, management et marketing) Médiation culturelle (journalisme, arts, culture et médias)</b>
+            </p>
+        </div>
+        <div class="tab-pane" id="masters">
+            <h1>Masters</h1>
+            <p>green green green green green</p>
+        </div>
+    </div>
+</div>
+        </div>
+
+
     </section>
 
     <!-- Portfolio Grid Section -->
@@ -437,6 +602,9 @@
     <aside class="clients">
         <div class="container">
             <div class="row">
+                <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Les partenaires</h2>
+            </div>
                 <div class="col-md-3 col-sm-6">
                     <a href="#">
                         <img src="img/partenaires/armel.png" height="100" width="400" alt="Armel" class="img-responsive img-centered partener logo-partner hvr-grow">
@@ -479,12 +647,12 @@
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <a href="#">
-                        <img src="img/partenaires/jfb.jpg" alt="JFB" class="img-responsive img-centered logo-partner hvr-grow">
+                        <img src="img/partenaires/jfb.jpg" alt="JFB" class="img-responsive img-centered logo-partner hvr-grow" align="middle">
                     </a>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <a href="#">
-                        <img src="img/partenaires/institut_francais_budapest.png" alt="Institut Français Budapest" class="img-responsive img-centered logo-partner hvr-grow">
+                        <img src="img/partenaires/institut_francais_budapest.png" alt="Institut Français Budapest" class="img-responsive img-centered logo-partner hvr-grow" align="left">
                     </a>
                 </div>
             </div>
@@ -496,7 +664,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Contact Us</h2>
+                    <h2 class="section-heading">Contactez nous</h2>
                     <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
                 </div>
             </div>
@@ -506,21 +674,21 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
+                                    <input type="text" class="form-control" placeholder="Votre nom *" id="name" required data-validation-required-message="Veuillez renseigner votre Nom">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
+                                    <input type="email" class="form-control" placeholder="Votre email *" id="email" required data-validation-required-message="Veuillez renseigner votre Email">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                    <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                    <input type="tel" class="form-control" placeholder="Votre numéro *" id="phone" required data-validation-required-message="Veuillez rensigner votre numéro de téléphone"M
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <textarea class="form-control" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                                    <textarea class="form-control" placeholder="Votre message... *" id="message" required data-validation-required-message="Veuillez saisir un message"></textarea>
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
@@ -544,19 +712,17 @@
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline social-buttons">
-                        <li><a href="#"><i class="fa fa-twitter"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-facebook"></i></a>
+                        <li><a href="#"><i class="fa fa-globe"></i></a>
                         </li>
                         <li><a href="#"><i class="fa fa-linkedin"></i></a>
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lx-4">
                     <ul class="list-inline quicklinks">
-                        <li><a href="#">Privacy Policy</a>
+                        <li><a href="#">Politique de confidentialités</a>
                         </li>
-                        <li><a href="#">Terms of Use</a>
+                        <li><a href="#">Conditions d'utilsiation</a>
                         </li>
                     </ul>
                 </div>
