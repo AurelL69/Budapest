@@ -1,2 +1,2 @@
 # Budapest
-Project 
+Project Festival Resonances
