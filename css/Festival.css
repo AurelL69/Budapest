@@ -21,6 +21,36 @@ p.texte-tabs {
     font-family: Roboto Slab;
     text-align: justify;
 }
+.bold-color{
+    color: #0b3468;
+}
+.bold-color-lg{
+    font-size: 18px;
+    color: #0b3468;
+}
+aside {
+    float: right;
+    text-align: right;
+    margin-left: 2em;
+}
+.pdf-link{
+    border: 1px solid #0b3468;
+    border-radius: 0.3em;
+    padding-left: 0.8em;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    margin: 0.5em;
+    font-size: 1.2em;
+}
+.pdf-link:hover,.pdf-link:active{
+    
+    background-color: #0b3468;
+    border-radius: 0.3em;
+    padding-left: 0.8em;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    color: #fff;
+}
 .carousel-page
 {
 width:100%;
@@ -30,6 +60,7 @@ color:white;
 }
 a, a:hover, a:focus, a:active, a.active {
     outline: 0;
+    text-decoration: none;
 }
 a {
     color: #0b3468;
@@ -75,10 +106,28 @@ h1, h2, h3, h4, h5, h6 {
     color: #0b3468;
     background-color: #fff;
 }
+button.btn-send{
+    border: 1px solid #0b3468;
+    background-color: #fff;
+    border-radius: 0.3em;
+    padding-left: 0.8em;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    margin: 0.5em;
+    font-size: 1.2em;
+}
+button.btn-send:hover{
+    background-color: #0b3468;
+    border-radius: 0.3em;
+    padding-left: 0.8em;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    color: #fff;
+}
 .btn-xl {
     color: #fff;
-    background-color: #0b3468;
-    border-color: #0b3468;
+    background-color: #f7f4f4;
+    border: 2px solid #0b3468;
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-weight: 700;
@@ -89,7 +138,7 @@ h1, h2, h3, h4, h5, h6 {
 .btn-xl:hover, .btn-xl:focus, .btn-xl:active, .btn-xl.active, .open .dropdown-toggle.btn-xl {
     color: #fff;
     background-color: #0b3468;
-    border-color: #f6bf01;
+    
 }
 .btn-xl:active, .btn-xl.active, .open .dropdown-toggle.btn-xl {
     background-image: none;
@@ -105,6 +154,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-default {
     background-color: #222;
     border-color: transparent;
+    /*height: 9.2em;*/
 }
 .navbar-default .navbar-brand {
     color: #0b3468;
@@ -132,19 +182,24 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
     letter-spacing: 1px;
     color: #fff;
+    border-radius: 0.5em;
 }
 .navbar-default .nav li a:hover, .navbar-default .nav li a:focus {
     color: #0b3468;
     outline: 0;
+    border-radius: 0.5em;
 }
+
 .navbar-default .navbar-nav>.active>a {
     border-radius: 0;
     color: #fff;
     background-color: #0b3468;
+    border-radius: 0.5em;
 }
 .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
     color: #fff;
     background-color: #0b3468;
+    border-radius: 0.5em;
 }
 @media (min-width:768px) {
     .navbar-default {
@@ -162,17 +217,22 @@ h1, h2, h3, h4, h5, h6 {
     transition: all .3s;
 }
 .navbar-default .navbar-nav>.active>a {
-    border-radius: 3px;
+    border-radius: 0.5em;
+
 }
 .navbar-default.navbar-shrink {
-    background-color: #747474;
+    background-color: #a9adad;
     padding: 10px 0;
-    border-bottom: solid 0.4em #bebebe;
+    border-bottom: solid 0.2em #0B3468;
     
 }
 .navbar-default.navbar-shrinknavbar-brand .navbar-brand {
     font-size: 1.5em;
     
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+    background-color: #0b3468;
+    color: #fff;
 }
 }header {
     background-image: url(../img/university/university2.png);
@@ -240,7 +300,7 @@ section h3.section-subheading {
     text-transform: none;
     font-style: italic;
     font-weight: 400;
-    margin-bottom: 75px;
+    margin-bottom: 25px;
 }
 @media (min-width:768px) {
     section {
@@ -494,13 +554,13 @@ aside.clients img {
     margin: 50px auto;
 }
 section#contact {
-    background-color: #222;
-    background-image: url(../img/map-image.png);
+    background-color: #fff;
+    
     background-position: center;
     background-repeat: no-repeat;
 }
 section#contact .section-heading {
-    color: #fff;
+    color: #0b3468;
 }
 section#contact .form-group {
     margin-bottom: 25px;
@@ -509,10 +569,11 @@ section#contact .form-group input, section#contact .form-group textarea {
     padding: 20px;
 }
 section#contact .form-group input.form-control {
-    height: auto;
+    height: 1.6em;
 }
+
 section#contact .form-group textarea.form-control {
-    height: 236px;
+    height: 13em;
 }
 section#contact .form-control:focus {
     border-color: #0b3468;
@@ -545,9 +606,16 @@ section#contact :-ms-input-placeholder {
 section#contact .text-danger {
     color: #e74c3c;
 }
+.responsable-contact{
+    font-family: "Roboto Slab";
+    font-size: 1.2em;
+    color: #0b3468;
+}
 footer {
     padding: 25px 0;
     text-align: center;
+    background-color: #F8F8F8;
+    border-top: solid 0.2em #0B3468;
 }
 footer span.copyright {
     line-height: 40px;
@@ -656,7 +724,7 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 }
 ::selection {
     text-shadow: none;
-    background: #0b3468;
+    background: #f1f1f1;
 }
 img::selection {
     background: 0 0;

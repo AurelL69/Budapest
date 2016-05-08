@@ -4,6 +4,7 @@ img .partener{
 }
 .logo-partner{
 	opacity: 0.7;
+	margin: 2em;
 }
 .logo-partner:hover{
 	opacity: 1;
@@ -12,3 +13,4 @@ img .partener{
 	background-color: #0b3468;
 	color: white;
 }
+
