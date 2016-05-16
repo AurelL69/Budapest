@@ -37,7 +37,6 @@ hr {
 	padding-right: 1.5em;
 	padding-left: 1.5em;
 	border-right: solid 0.2em #C8A461;
-	border-radius: 0.5em;
 }
 
 .bloc-programme2{
@@ -46,7 +45,6 @@ hr {
 	padding-right: 1.5em;
 	padding-left: 1.5em;
 	border-right: solid 0.2em #C8A461;
-	border-radius: 0.5em;
 }
 .bloc-programme3{
 	background-color : #F3F3F3;
@@ -54,7 +52,6 @@ hr {
 	padding-right: 1.5em;
 	padding-left: 1.5em;
 	border-right: solid 0.2em #C8A461;
-	border-radius: 0.5em;
 }
 
 .paragpheProgramme{
@@ -72,7 +69,6 @@ hr {
 	border-top: solid 0.2em #C8A461;
 	padding-right: 1.5em;
 	padding-left: 1.5em;
-	border-radius: 0.5em;
 }
 .texteProgrammeFestival{
 	margin-top: 1em;
@@ -85,8 +81,14 @@ hr {
 	padding-right: 1.5em;
 	padding-left: 1.5em;
 	padding-bottom: 1.2em;
-	border-radius: 0.5em;
 }
+
+#forumEconomique{
+	border-radius: 1em;
+	padding: 2em;
+	margin: 0.2em;
+}
+
 
 .bold-color{
     color: #0b3468;
@@ -128,4 +130,3 @@ aside {
     padding-top: 0.5em;
     color: #fff;
 }
-

@@ -27,39 +27,6 @@ p.texte-tabs {
     font-family: Roboto Slab;
     text-align: justify;
 }
-p.texte-tabs2 {
-    font-size: 16px;
-    font-family: Roboto Slab;
-    text-align: justify;
-    background-color: #fff;
-    padding: 2em;
-    border-right: solid 0.2em #C8A461;
-    border-radius: 0.5em;
-}
-
-p.texte-tabs3 {
-    font-size: 16px;
-    font-family: Roboto Slab;
-    text-align: justify;
-    background-color: #f8f8f8;
-    padding: 2em;
-    border-left: solid 0.2em #C8A461;
-    border-right: solid 0.1em #C8A461;
-    border-radius: 0.5em;
-}
-
-p.texte-tabs4 {
-    font-size: 16px;
-    font-family: Roboto Slab;
-    text-align: justify;
-    background-color: #f8f8f8;
-    padding: 2em;
-    border-right: solid 0.2em #C8A461;
-    border-left: solid 0.1em #C8A461;
-    border-radius: 0.5em;
-}
-
-
 
 .carousel-page
 {
@@ -581,7 +548,7 @@ section#contact .form-group input, section#contact .form-group textarea {
     padding: 20px;
 }
 section#contact .form-group input.form-control {
-    height: 3.8em;
+    height: 1.6em;
 }
 
 section#contact .form-group textarea.form-control {
