@@ -80,7 +80,7 @@ hr {
     font-family: Roboto Slab;
     text-align: justify;
     background-color : #F8F8F8;
-	border-right: solid 0.2em #C8A461;
+	border-right: solid 0.2em;
 	padding-top: 1.2em;
 	padding-right: 1.5em;
 	padding-left: 1.5em;
@@ -89,8 +89,7 @@ hr {
 }
 
 .bold-color{
-    color: #0b3468;
-    
+    color: #0b3468; 
 }
 
 .bold-color-gold{
@@ -128,4 +127,10 @@ aside {
     padding-top: 0.5em;
     color: #fff;
 }
-
+.bloc_contact{
+	background-color: #F8F8F8;
+	opacity: 0.9;
+	
+	padding: 2em;
+	border-radius: 0.3em;
+}
