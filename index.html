@@ -132,28 +132,28 @@
 <div class="carousel-page">
 <!-- <img src="img/slider/Logo-Festival.jpg"> -->
 </div>  
-<div class="carousel-caption"><a href="#festival">Le festival Resonances</a><br /><span class="bold-color-gold" style="font-size:20px;">Le 1, 2 et 3 Juin</span><br /><span style="font-size:18px;">Budapest</span></div>
+<div class="carousel-caption"><a href="#festival">Le festival Résonances</a><br /><span class="bold-color-gold" style="font-size:20px;">Le 1, 2 et 3 Juin</span><br /><span style="font-size:18px;">Budapest</span></div>
 </div>     
 <!-- Page 4 -->
 <div class="item">  
 <div class="carousel-page">
 <img src="img/slider/István_Szabó_Slider.jpg">
 </div>  
-<div class="carousel-caption"><a href="#festival">István Szabó</a><br /><span class="bold-color-gold" style="font-size:20px;">Festival Resonances</span><br /><span style="font-size:18px;">Budapest</span></div>
+<div class="carousel-caption"><a href="#festival">István Szabó</a><br /><span class="bold-color-gold" style="font-size:20px;">Festival Résonances</span><br /><span style="font-size:18px;">Budapest</span></div>
 </div> 
 <!-- Page 5 -->
 <div class="item">  
 <div class="carousel-page">
 <img src="img/slider/Tonino_Benaquista_Slider.jpg">
 </div>  
-<div class="carousel-caption"><a href="#festival">Tonino Benaquista</a><br /><span class="bold-color-gold" style="font-size:18px;">Roman et scénario : l’écriture au croisement des deux genres</span><br /><span style="font-size:14px;"> Master Class / Festival Resonances</span></div>
+<div class="carousel-caption"><a href="#festival">Tonino Benaquista</a><br /><span class="bold-color-gold" style="font-size:18px;">Roman et scénario : l’écriture au croisement des deux genres</span><br /><span style="font-size:14px;"> Master Class / Festival Résonances</span></div>
 </div>
 <!-- Page 6 -->
 <div class="item">  
 <div class="carousel-page">
 <img src="img/slider/Alain_Fleischer_Slider.jpg">
 </div>  
-<div class="carousel-caption"><a href="#festival">Alain FLEISCHER</a><br /><span class="bold-color-gold" style="font-size:18px;">Les images et les mots</span><br /><span style="font-size:14px;"> Master Class / Festival Resonances</span></div>
+<div class="carousel-caption"><a href="#festival">Alain FLEISCHER</a><br /><span class="bold-color-gold" style="font-size:18px;">Les images et les mots</span><br /><span style="font-size:14px;"> Master Class / Festival Résonances</span></div>
 </div>      
 </div>
 <!-- Contrôles -->
@@ -2715,6 +2715,8 @@
         </div>
     </div>
 
+    <!-- Return to Top -->
+    <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
 
 
 
@@ -2740,10 +2742,31 @@
     <script src="js/agency.js"></script>
 
     <script>
-        $('#myCarousel').carousel({
-        interval: 600
+        $('#my_carousel').carousel({
+        interval: 2500
         });
     </script>
+
+    <script type="text/javascript">
+    // ===== Scroll to Top ==== 
+        $(window).scroll(function() {
+            if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+                $('#return-to-top').fadeIn(200);    // Fade in the arrow
+            } else {
+                $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+            }
+        });
+
+        $('#return-to-top').click(function() {      // When arrow is clicked
+            $('body,html').animate({
+                scrollTop : 0                       // Scroll to top of body
+            }, 500);
+        });
+
+
+
+    </script>
+
 
 </body>
 
