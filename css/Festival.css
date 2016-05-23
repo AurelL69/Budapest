@@ -178,7 +178,7 @@ button.btn-send:hover{
     border-color: rgba(255, 255, 255, .02);
 }
 .navbar-collapse {
-    margin-top: 5em;
+    margin-top: 4em;
     text-align: center;
 }
 .navbar-default .navbar-toggle {
@@ -251,8 +251,6 @@ button.btn-send:hover{
     color: #fff;
 }
 }header {
-    background-image: url(../img/pattern/mooning.png);
-    opacity: 0.7;
     background-repeat: none;
     background-attachment: scroll;
     background-position: center center;
@@ -627,7 +625,7 @@ section#contact .text-danger {
 .responsable-contact{
     font-family: "Roboto Slab";
     font-size: 1.2em;
-    color: #0b3468;
+    
 }
 footer {
     padding: 25px 0;
@@ -759,15 +757,20 @@ body {
 
 #sectiontop{
     background-image: url(../img/background/budapest4.jpg);
+    filter: sectiontop(opacity=80);
+    -moz-opacity: 0.8;
+    -khtml-opacity: 0.8;
+    opacity: 0.8;
     background-size: cover;
 }
 #university{
-    background-image: url(../img/pattern/mooning.png);
+    background-image: url(../img/background/university0.jpg);
+    background-size: cover;
 }
 
 #formation{
-    /*background-image: url(../img/background/university4.jpg);*/
-    height: 10%;
+    background-image: url(../img/background/formation0.jpg);
+    background-size: cover;
 }
 #partenaires{
     background-color: 
@@ -782,14 +785,14 @@ body {
 .carousel-caption{
     font-size: 24px;
     font-family: Montserrat;
-    margin-bottom: 5em;
+    margin-bottom: 2em;
     color: #0b3468;
    text-transform: uppercase;
     left: 5em;
     width: 25em;
     text-align: left;
     background-color: #F8F8F8;
-   
+    opacity: 0.9;
     padding: 0.5em;
     border-bottom: solid 4px #C8A461;
     border-top-right-radius: 0.5em;

@@ -134,3 +134,15 @@ aside {
 	padding: 2em;
 	border-radius: 0.3em;
 }
+.bloc_universite{
+	background-color: #F8F8F8;
+	opacity: 0.9;
+	padding: 2em;
+	border-radius: 0.3em;
+}
+.bloc_formation{
+	background-color: #F8F8F8;
+	opacity: 1;
+	padding: 2em;
+	border-radius: 0.3em;
+}
